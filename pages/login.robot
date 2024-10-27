@@ -7,8 +7,14 @@ ${emailUsuario}      casosdeteste@email.com
 ${senhaUsuario}      Senha123!
 
 *** Keywords ***
-Realizar login
-    Click Link        id=login-button
-    Input Text        id=email        ${emailUsuario}
-    Input Text        id=password     ${senhaUsuario}
-    Click Button      id=botao-login
+Digitar no campo email o email do usuario
+	Input Text	xpath=//*[@id="email"]        ${EMAIL}
+
+Digitar no campo senha a senha do usuário
+	Input Text	xpath=//*[@id="password"]         ${SENHA}
+
+Acessar pagina de login
+    Click Element    xpath=//*[@id="login-button"]
+Acionar o botão login
+    Click Element    xpath=//*[@id="botao-login"]
+	Sleep    3
