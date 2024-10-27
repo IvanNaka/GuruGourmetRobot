@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Essa suíte testa as funcionalidades relacionados ao cadastro de usuários no site
-Resource         cadastro_usuario.robot
+Resource         ../pages/cadastro_usuario.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 
