@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Essa suíte testa a denúncia justificada e o comentário de usuário não logado
+Documentation    Essa suíte testa a denúncia justificada de comentário
 Resource         form_resources.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
