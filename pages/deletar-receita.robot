@@ -7,6 +7,6 @@ Resource    ../pages/resource.robot
 
 *** Keywords ***
 Deletar receita
-    Open Browser	browser=${BROWSER}
-    Maximize Browser Window
+    Click Button      id=deleteButton
+    Click Button      id=apagar
 

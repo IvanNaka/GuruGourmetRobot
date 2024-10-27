@@ -13,11 +13,16 @@ Test Teardown    Fechar o navegador
 Caso de Teste 24 - Usuário criador da receita
 	[Documentation]    Esse teste verifica a edição de uma receita com o usuário criador dela
 	Acessar a home page
-    Sleep    3s
+    Sleep    2s
     Realizar login
+    Sleep    2s
     Cadastrar receita
-    Acessar receita
+    Acessar Minhas Receitas
     Editar receita
+    Acessar Minhas Receitas
+    Sleep    2s
+    Verificar Edicao
+    Deletar receita
 
 
 Caso de Teste 26 - Usuário qualquer

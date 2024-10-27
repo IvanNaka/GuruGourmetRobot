@@ -6,7 +6,6 @@ Resource    ../pages/resource.robot
 
 
 *** Keywords ***
-Acessar receita
-    Open Browser	browser=${BROWSER}
-    Maximize Browser Window
-
+Acessar Minhas Receitas
+    Click Button      id=button-minhas
+    Click Link        id=receita
