@@ -13,8 +13,8 @@ CT12 - Realizar Cadastro no Site - Informações corretas
     Acessar a pagina home do site
     Acessar pagina de cadastro
     Digitar no campo nome o nome do usuario
-    Digitar no campo email o email teste@email.com
-    Digitar no campo senha a senha Teste123
+    Digitar no campo email o email do usuario
+    Digitar no campo senha a senha do usuario
     Acionar botão cadastrar
 
 CT13 - Realizar Cadastro no Site - Informações incorretas
