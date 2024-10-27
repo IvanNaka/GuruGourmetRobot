@@ -6,20 +6,24 @@ Test Teardown    Fechar o navegador
 
 
 *** Test Cases ***
-Caso de Teste 12 - Informações corretas
-	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
-	Acessar a home page
+CT12 - Realizar Cadastro no Site - Informações corretas
+    [Documentation]    Esse teste verifica a realização de um cadastro com informações corretas
+    [Tags]             cadastro
 
-Caso de Teste 13 - Informações incompletas
-	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
-	Acessar a home page
+    Acessar a pagina home do site
+    Acessar pagina de cadastro
+    Digitar no campo nome o nome do usuario
+    Digitar no campo email o email teste@email.com
+    Digitar no campo senha a senha Teste123
+    Acionar botão cadastrar
 
-Caso de Teste 14 - Email inválido
-	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
-	Acessar a home page
-Caso de Teste 15 - Usuário inválido
-	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
-	Acessar a home page
-Caso de Teste 16 - Senha inválida
-	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
-	Acessar a home page
+CT13 - Realizar Cadastro no Site - Informações incorretas
+    [Documentation]    Esse teste verifica a realização de um cadastro com informações incorretas
+    [Tags]    comentario
+
+    Acessar a pagina home do site
+    Acessar pagina de cadastro
+    Digitar no campo nome o nome do usuario 
+    Digitar no campo email o email do usuario errado
+    Digitar no campo senha a senha do usuario errada
+    Acionar botão cadastrar
