@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.0 on win32)" generated="2024-10-27T18:41:52.272323" rpa="false" schemaversion="5">
+<suite id="s1" name="Form Tests" source="C:\VerivalRoboto\GuruGourmet\form_tests.robot">
+<test id="s1-t1" name="CT2 - Adicionar comentários na lista da receita - Usuario não logado" line="9">
+<kw name="Abrir o navegador" owner="form_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-27T18:41:52.609455" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-27T18:41:52.609455" elapsed="1.756886"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-27T18:41:54.366341" elapsed="0.077929"/>
+</kw>
+<status status="PASS" start="2024-10-27T18:41:52.608425" elapsed="1.835845"/>
+</kw>
+<kw name="Acessar a pagina home do site" owner="form_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-27T18:41:54.459767" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-27T18:41:54.458774" elapsed="0.741387"/>
+</kw>
+<status status="PASS" start="2024-10-27T18:41:54.456232" elapsed="0.743929"/>
+</kw>
+<kw name="Entrar em uma receita" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T18:41:55.203148" level="INFO">Clicking element 'xpath=/html/body/main/section/div[2]/a[1]'.</msg>
+<arg>xpath=/html/body/main/section/div[2]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T18:41:55.202151" elapsed="0.474874"/>
+</kw>
+<status status="PASS" start="2024-10-27T18:41:55.201160" elapsed="0.475865"/>
+</kw>
+<kw name="Scroll para ver comentários" owner="form_resources">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-10-27T18:41:55.678022" level="INFO">Executing JavaScript:
+window.scrollBy(0,350)
+Without any arguments.</msg>
+<arg>window.scrollBy(0,350)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-10-27T18:41:55.678022" elapsed="0.006981"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T18:41:55.860533" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T18:41:55.685003" elapsed="0.175530"/>
+</kw>
+<status status="PASS" start="2024-10-27T18:41:55.677025" elapsed="0.183508"/>
+</kw>
+<kw name="Fechar o navegador" owner="form_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T18:41:56.000668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T18:41:55.861532" elapsed="0.139136"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-27T18:41:56.000668" elapsed="2.251796"/>
+</kw>
+<status status="PASS" start="2024-10-27T18:41:55.861532" elapsed="2.390932"/>
+</kw>
+<doc>Este teste verificar se é possível comentar numa receita sem estar logado</doc>
+<tag>comentario</tag>
+<status status="PASS" start="2024-10-27T18:41:52.607428" elapsed="5.645910"/>
+</test>
+<doc>Essa suíte testa o site do GuruGourmet</doc>
+<status status="PASS" start="2024-10-27T18:41:52.275315" elapsed="5.980018"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">comentario</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form Tests">Form Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
