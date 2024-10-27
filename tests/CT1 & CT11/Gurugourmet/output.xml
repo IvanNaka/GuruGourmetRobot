@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.0 on win32)" generated="2024-10-27T20:31:21.437388" rpa="false" schemaversion="5">
+<suite id="s1" name="Form Tests" source="C:\VerivalRoboto\Gurugourmet\form_tests.robot">
+<test id="s1-t1" name="CT1 - Denuncia de comentário - Denúncia Justificada" line="8">
+<kw name="Abrir o navegador" owner="form_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:21.792437" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-27T20:31:21.791440" elapsed="1.771670"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-27T20:31:23.563110" elapsed="0.086768"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:21.790444" elapsed="1.859434"/>
+</kw>
+<kw name="Acessar a pagina home do site" owner="form_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:23.654873" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-27T20:31:23.651872" elapsed="0.867680"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:23.650875" elapsed="0.868677"/>
+</kw>
+<kw name="Acessar pagina de login" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:24.521548" level="INFO">Clicking element 'xpath=//*[@id="login-button"]'.</msg>
+<arg>xpath=//*[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:24.520550" elapsed="0.203455"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:24.520550" elapsed="0.203455"/>
+</kw>
+<kw name="Digitar no campo email o email do usuario" owner="form_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:24.726001" level="INFO">Typing text 'roboto@verival.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:24.726001" elapsed="0.204451"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:24.725003" elapsed="0.205449"/>
+</kw>
+<kw name="Digitar no campo senha a senha do usuário" owner="form_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:24.931451" level="INFO">Typing text 'Teste123!' into text field 'xpath=//*[@id="password"]'.</msg>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:24.931451" elapsed="0.094746"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:24.930452" elapsed="0.095745"/>
+</kw>
+<kw name="Acionar o botão login" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:25.027195" level="INFO">Clicking element 'xpath=//*[@id="botao-login"]'.</msg>
+<arg>xpath=//*[@id="botao-login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:25.027195" elapsed="0.045876"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T20:31:28.073520" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T20:31:25.073071" elapsed="3.000449"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:25.026197" elapsed="3.047323"/>
+</kw>
+<kw name="Entrar em uma receita" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:28.076513" level="INFO">Clicking element 'xpath=/html/body/main/section/div[2]/a[1]'.</msg>
+<arg>xpath=/html/body/main/section/div[2]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:28.075515" elapsed="0.513627"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:28.074518" elapsed="0.514624"/>
+</kw>
+<kw name="Acionar botão denunciar" owner="form_resources">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:28.591136" level="INFO">Executing JavaScript:
+window.scrollBy(0,300)
+Without any arguments.</msg>
+<arg>window.scrollBy(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-10-27T20:31:28.590139" elapsed="0.024934"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:28.616070" level="INFO">Clicking element 'xpath=(//button[text()="Denunciar"])[1]'.</msg>
+<arg>xpath=(//button[text()="Denunciar"])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:28.616070" elapsed="0.344081"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:28.590139" elapsed="0.370012"/>
+</kw>
+<kw name="Escrever Denúncia" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:28.961147" level="INFO">Clicking element 'xpath=/html/body/div/form/textarea'.</msg>
+<arg>xpath=/html/body/div/form/textarea</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:28.961147" elapsed="0.089760"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:29.051904" level="INFO">Typing text 'Não gostei' into text field 'xpath=/html/body/div/form/textarea'.</msg>
+<arg>xpath=/html/body/div/form/textarea</arg>
+<arg>Não gostei</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:29.050907" elapsed="0.069814"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:28.961147" elapsed="0.159574"/>
+</kw>
+<kw name="Terminar Denúncia" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:29.123713" level="INFO">Clicking element 'xpath=/html/body/div/form/button'.</msg>
+<arg>xpath=/html/body/div/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:29.123713" elapsed="0.279253"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T20:31:31.404500" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T20:31:29.402966" elapsed="2.001534"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:31.560091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T20:31:31.405511" elapsed="0.154580"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:29.122724" elapsed="2.437367"/>
+</kw>
+<kw name="Verificar denúncia" owner="form_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:31.579039" level="INFO">Current page contains text 'Denúncia registrada com sucesso'.</msg>
+<arg>Denúncia registrada com sucesso</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-27T20:31:31.561095" elapsed="0.017944"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:31.561095" elapsed="0.017944"/>
+</kw>
+<kw name="Fechar o navegador" owner="form_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:31.701712" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T20:31:31.580037" elapsed="0.121675"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-27T20:31:31.701712" elapsed="2.254251"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:31.579039" elapsed="2.376924"/>
+</kw>
+<doc>Esse teste verifica o denúncio de comentário válido</doc>
+<tag>denuncia</tag>
+<status status="PASS" start="2024-10-27T20:31:21.789447" elapsed="12.166516"/>
+</test>
+<test id="s1-t2" name="CT11 - Adicionar comentários na lista da receita - Usuario não logado" line="22">
+<kw name="Abrir o navegador" owner="form_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:33.959952" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-27T20:31:33.958956" elapsed="1.685551"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-27T20:31:35.645503" elapsed="0.046874"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:33.958956" elapsed="1.733421"/>
+</kw>
+<kw name="Acessar a pagina home do site" owner="form_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:35.693375" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-27T20:31:35.693375" elapsed="0.770939"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:35.693375" elapsed="0.770939"/>
+</kw>
+<kw name="Entrar em uma receita" owner="form_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:36.467306" level="INFO">Clicking element 'xpath=/html/body/main/section/div[2]/a[1]'.</msg>
+<arg>xpath=/html/body/main/section/div[2]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T20:31:36.466309" elapsed="0.491684"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:36.466309" elapsed="0.492684"/>
+</kw>
+<kw name="Scroll para ver comentários" owner="form_resources">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:36.959988" level="INFO">Executing JavaScript:
+window.scrollBy(0,400)
+Without any arguments.</msg>
+<arg>window.scrollBy(0,400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-10-27T20:31:36.958993" elapsed="0.007976"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:37.166436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T20:31:36.966969" elapsed="0.199467"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:36.958993" elapsed="0.207443"/>
+</kw>
+<kw name="Verificar comentários" owner="form_resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:37.198352" level="INFO">Current page does not contain text 'id=comentarios-form'.</msg>
+<arg>id=comentarios-form</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-10-27T20:31:37.167433" elapsed="0.030919"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:37.166436" elapsed="0.031916"/>
+</kw>
+<kw name="Fechar o navegador" owner="form_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T20:31:37.383854" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T20:31:37.199348" elapsed="0.185504"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-27T20:31:37.384852" elapsed="2.187843"/>
+</kw>
+<status status="PASS" start="2024-10-27T20:31:37.199348" elapsed="2.373347"/>
+</kw>
+<doc>Este teste verificar se é possível comentar numa receita sem estar logado</doc>
+<tag>comentario</tag>
+<status status="PASS" start="2024-10-27T20:31:33.957957" elapsed="5.616731"/>
+</test>
+<doc>Essa suíte testa a denúncia justificada e o comentário de usuário não logado</doc>
+<status status="PASS" start="2024-10-27T20:31:21.439382" elapsed="18.138297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">comentario</stat>
+<stat pass="1" fail="0" skip="0">denuncia</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Form Tests">Form Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
