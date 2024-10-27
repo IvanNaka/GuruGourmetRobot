@@ -1,9 +1,9 @@
 *** Settings ***
-LibrarySeleniumLibrary
+Library    SeleniumLibrary
 
 *** Variables ***
-${BROWSER}chrome 
-${URL}http://localhost:8000/
+${BROWSER}    chrome 
+${URL}    http://localhost:8000/
 ${NOME}     Camila
 ${SENHA}    Teste123!
 ${SENHAE}   Testeabc
@@ -13,36 +13,39 @@ ${EMAILE}   teste@email
 
 *** Keywords ***
 Abrir o navegador
-    Open Browserbrowser=${BROWSER}
-Maximize Browser Window
+    Open Browser    browser=${BROWSER}
+    Maximize Browser Window
 
 Fechar o navegador
-Capture Page Screenshot
-Close Browser
+    Capture Page Screenshot
+    Close Browser
 
 Acessar a pagina home do site
-    Go Tourl=${URL}
+    Go To    url=${URL}
 
 Digitar no campo nome o nome do usuario
-    Input Textxpath=//*[@id="nome"]        ${NOME}
+    Input Text    xpath=//*[@id="username"]        ${NOME}
 
 Digitar no campo email o email do usuario
-    Input Textxpath=//*[@id="email"]        ${EMAIL}
+    Input Text    xpath=//*[@id="email"]        ${EMAIL}
 
 Digitar no campo email o email do usuario errado
-    Input Textxpath=//*[@id="email"]        ${EMAILE}
+    Input Text    xpath=//*[@id="email"]        ${EMAILE}
 
 Digitar no campo senha a senha do usuário
-    Input Textxpath=//*[@id="password"]         ${SENHA}
+    Input Text    xpath=//*[@id="password"]         ${SENHA}
 
 Digitar no campo senha a senha do usuário errada
-    Input Textxpath=//*[@id="password"]         ${SENHAE}
+    Input Text    xpath=//*[@id="password"]         ${SENHAE}
 
 Acessar pagina de login
     Click Element    xpath=//*[@id="login-button"]
 
 Acionar o botão cadastro
     Click Element    xpath=//html/body/nav/div/div[2]/div/a
-Sleep    3
+    Sleep    3
+Acessar pagina de cadastro
+    Click Element    xpath=/html/body/nav/div/div[2]/div/a
+
 
 
