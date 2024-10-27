@@ -3,8 +3,8 @@ Library	    SeleniumLibrary
 Resource    ../pages/resource.robot
 
 *** Variables ***
-${emailUsuario}      casosdeteste@email.com	
-${senhaUsuario}      Senha123!
+${SENHA}    Teste123!
+${EMAIL}    roboto@verival.com
 
 *** Keywords ***
 Digitar no campo email o email do usuario
