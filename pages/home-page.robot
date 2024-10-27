@@ -6,7 +6,5 @@ Resource    ../pages/resource.robot
 
 
 *** Keywords ***
-Acessar receita
-    Open Browser	browser=${BROWSER}
-    Maximize Browser Window
-
+Entrar em uma receita
+    Click Element    xpath=/html/body/main/section/div[2]/a[1]
