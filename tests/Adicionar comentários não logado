@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation    Essa suíte testa o comentário de usuário não logado
+Resource         form_resources.robot
+Test Setup       Abrir o navegador
+Test Teardown    Fechar o navegador
+
+
+CT11 - Adicionar comentários na lista da receita - Usuario não logado
+  [Documentation]    Este teste verificar se é possível comentar numa receita sem estar logado
+	[Tags]    comentario
+	Acessar a pagina home do site
+	Entrar em uma receita
+	Scroll para ver comentários
+	Verificar comentários
