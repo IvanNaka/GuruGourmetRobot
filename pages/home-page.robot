@@ -3,8 +3,9 @@ Library	    SeleniumLibrary
 Resource    ../pages/resource.robot
 
 *** Variables ***
+${URL}		http://localhost:8000/
 
 
 *** Keywords ***
-Entrar em uma receita
-    Click Element    xpath=/html/body/main/section/div[2]/a[1]
+Acessar a pagina home do site
+	Go To	url=${URL}
