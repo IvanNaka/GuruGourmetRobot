@@ -6,11 +6,7 @@ Resource    ../pages/resource.robot
 
 
 *** Keywords ***
-Cadastrar receita
+Deletar receita
     Open Browser	browser=${BROWSER}
     Maximize Browser Window
 
-
-Editar receita
-    Open Browser	browser=${BROWSER}
-    Maximize Browser Window
