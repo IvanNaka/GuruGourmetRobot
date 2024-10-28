@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    Essa suíte testa as funcionalidades relacionados ao cadastro de usuários no site
-
 Resource    ../../pages/resource.robot
 Resource    ../../pages/cadastro_usuario.robot
 Test Setup       Abrir o navegador
@@ -32,11 +31,14 @@ Caso de Teste 14 - Email inválido
 	[Documentation]    Esse teste verifica o email invalido no cadastro do usuario
 	Acessar a home page
 	Acessar o registrar
-	Realizar login email invalido
+	Realizar cadastro email invalido
 
 Caso de Teste 15 - Usuário inválido
 	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
 	Acessar a home page
+    Realizar cadastro Usuario invalido
+
 Caso de Teste 16 - Senha inválida
 	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
 	Acessar a home page
+    Realizar cadastro Senha invalida

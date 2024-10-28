@@ -22,6 +22,7 @@ Criar receita
     Input Text    id=texto             ${texto}
     Choose File    id=image    C:\Users\salio\OneDrive\Área de Trabalho\FACULDADE\3° PERIODO\Experiência Criativa\gurugourmet\staticfiles\assets\receitas\receita1.png
     Click Element   xpath=//button[text()="Salvar"]
+    
 deletar Informações da receita
     Click Element    xpath=//button[@class="btn"]//a[text()="Editar receita"]
     Select From List By Label    id=ingredientes    Cebola - 1.00 g

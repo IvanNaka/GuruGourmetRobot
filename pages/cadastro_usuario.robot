@@ -3,56 +3,55 @@ Library	    SeleniumLibrary
 Resource    ../pages/resource.robot
 
 *** Variables ***
-${BROWSER}    chrome 
-${URL}    http://localhost:8000/
-${NOME}     Camila
-${SENHA}    Teste123!
-${SENHAE}   Testeabc
-${EMAIL}    roboto@verival.com
-${EMAILE}   teste@email
-${URL}    http://localhost:8000/
 ${emailUsuarioInvalido}      casosdeteste
+${senhaInvalida}             senhafraca
+${usuarioInvalido}           casosdeteste
 ${senhaUsuario}      Senha123!
 ${nomeUsuario}    toby4
 ${emailUsuario}      toby4@gmail.com
 
 *** Keywords ***
-Realizar login email invalido
-    input Text        id=username    ${nomeUsuario}
+Realizar cadastro email invalido
+    input Text        id=username     ${nomeUsuario}
     Input Text        id=email        ${emailUsuarioInvalido}
     Input Text        id=password     ${senhaUsuario}
     Click Element    xpath=//button[@onclick="cadastro()"]
-Realizar login
+Realizar cadastro Usuario invalido
+    input Text        id=username     ${nomeUsuario}
+    Input Text        id=email        ${emailUsuarioInvalido}
+    Input Text        id=password     ${senhaUsuario}
+    Click Element    xpath=//button[@onclick="cadastro()"]
+Realizar cadastro Senha invalida
+    input Text        id=username    ${nomeUsuario}
+    Input Text        id=email        ${emailUsuarioInvalido}
+    Input Text        id=password     ${senhaInvalida}
+    Click Element    xpath=//button[@onclick="cadastro()"]
+
+
+Realizar cadastro
     input Text        id=username    ${nomeUsuario}
     Input Text        id=email        ${emailUsuario}
     Input Text        id=password     ${senhaUsuario}
     Click Element    xpath=//button[@onclick="cadastro()"]*** Settings ***
 
-Abrir o navegador
-    Open Browser    browser=${BROWSER}
-    Maximize Browser Window
-
-Fechar o navegador
-    Capture Page Screenshot
-    Close Browser
 
 Acessar a pagina home do site
     Go To    url=${URL}
 
 Digitar no campo nome o nome do usuario
-    Input Text    xpath=//*[@id="username"]        ${NOME}
+    Input Text    xpath=//*[@id="username"]        ${nomeUsuario}
 
 Digitar no campo email o email do usuario
-    Input Text    xpath=//*[@id="email"]        ${EMAIL}
+    Input Text    xpath=//*[@id="email"]        ${emailUsuario}
 
 Digitar no campo email o email do usuario errado
-    Input Text    xpath=//*[@id="email"]        ${EMAILE}
+    Input Text    xpath=//*[@id="email"]        ${emailUsuarioInvalido}
 
 Digitar no campo senha a senha do usuário
-    Input Text    xpath=//*[@id="password"]         ${SENHA}
+    Input Text    xpath=//*[@id="password"]         ${senhaUsuario}
 
 Digitar no campo senha a senha do usuário errada
-    Input Text    xpath=//*[@id="password"]         ${SENHAE}
+    Input Text    xpath=//*[@id="password"]         ${senhaInvalida}
 
 Acessar pagina de login
     Click Element    xpath=//*[@id="login-button"]
