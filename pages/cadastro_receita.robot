@@ -45,3 +45,6 @@ Verificar Edicao
     Page Should Contain    ${tituloNovo}
     Page Should Contain    ${textoNovo}
     Page Should Contain    ${ingredienteNovo}
+
+Verificar Edicao Usuario Nao logado
+    Page Should Not Contain    id=button-edit

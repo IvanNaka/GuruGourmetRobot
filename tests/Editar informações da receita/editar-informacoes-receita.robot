@@ -28,4 +28,6 @@ Caso de Teste 24 - Usuário criador da receita
 Caso de Teste 26 - Usuário qualquer
 	[Documentation]    Esse teste verifica a edição de uma receita com um usuário qualquer
 	Acessar a home page
+    Acessar Receita
+    Verificar Edicao Usuario Nao logado
 

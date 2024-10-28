@@ -9,3 +9,5 @@ Resource    ../pages/resource.robot
 Acessar Minhas Receitas
     Click Button      id=button-minhas
     Click Link        id=receita
+Acessar Receita
+    Click Link        id=receita
