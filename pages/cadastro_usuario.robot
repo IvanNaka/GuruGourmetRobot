@@ -7,8 +7,8 @@ ${emailUsuarioInvalido}      casosdeteste
 ${senhaInvalida}             senhafraca
 ${usuarioInvalido}           casosdeteste
 ${senhaUsuario}      Senha123!
-${nomeUsuario}       testeFuncionando121212
-${emailUsuario}      testefuncionan1232313312do@gmail.com
+${nomeUsuario}       testeFuncionando
+${emailUsuario}      testefuncionando@gmail.com
 
 *** Keywords ***
 Realizar cadastro email invalido
