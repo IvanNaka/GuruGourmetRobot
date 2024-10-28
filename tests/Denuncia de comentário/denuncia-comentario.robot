@@ -13,6 +13,8 @@ Caso de Teste 01 - Denúncia justificada
 	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
 	Acessar a home page
 	Realizar login
+	Acessar a home page
+	Sleep    2s
 	Acessar Receita
 	Acionar botão denunciar
 	Escrever Denúncia
