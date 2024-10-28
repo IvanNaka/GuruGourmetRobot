@@ -10,7 +10,6 @@ Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 Caso de Teste 09 - Adicionar Comentário em Receita
-    [Documentation]   
     Acessar a home page
     Realizar login
     Sleep    3s
@@ -21,7 +20,6 @@ Caso de Teste 09 - Adicionar Comentário em Receita
     Verificar comentário adicionado    Comentário de Teste pro vídeo.
 
 Caso de Teste 10 - Tentar Adicionar Comentário Vazio
-    [Documentation]  
     Acessar a home page
     Realizar login
     Sleep    3s
@@ -31,4 +29,7 @@ Caso de Teste 10 - Tentar Adicionar Comentário Vazio
     Tentar enviar comentário vazio
     Verificar mensagem de erro
 
-    
+Caso de Teste 11 - Usuario não logado
+	Acessar a home page
+	Acessar Receita
+	Scroll para ver comentários
