@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library	    SeleniumLibrary
+Resource    ../pages/resource.robot
 
 *** Variables ***
 ${BROWSER}    chrome 
@@ -9,9 +10,24 @@ ${SENHA}    Teste123!
 ${SENHAE}   Testeabc
 ${EMAIL}    roboto@verival.com
 ${EMAILE}   teste@email
-
+${URL}    http://localhost:8000/
+${emailUsuarioInvalido}      casosdeteste
+${senhaUsuario}      Senha123!
+${nomeUsuario}    toby4
+${emailUsuario}      toby4@gmail.com
 
 *** Keywords ***
+Realizar login email invalido
+    input Text        id=username    ${nomeUsuario}
+    Input Text        id=email        ${emailUsuarioInvalido}
+    Input Text        id=password     ${senhaUsuario}
+    Click Element    xpath=//button[@onclick="cadastro()"]
+Realizar login
+    input Text        id=username    ${nomeUsuario}
+    Input Text        id=email        ${emailUsuario}
+    Input Text        id=password     ${senhaUsuario}
+    Click Element    xpath=//button[@onclick="cadastro()"]*** Settings ***
+
 Abrir o navegador
     Open Browser    browser=${BROWSER}
     Maximize Browser Window
