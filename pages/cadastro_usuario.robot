@@ -7,8 +7,8 @@ ${URL}    http://localhost:8000/
 ${NOME}     Camila
 ${SENHA}    Teste123!
 ${SENHAE}   Testeabc
-${EMAIL}    roboto@verival.com
-${EMAILE}   teste@email
+${EMAIL}    robopto@verival.com
+${EMAILE}   testeemail
 
 
 *** Keywords ***
@@ -38,14 +38,17 @@ Digitar no campo senha a senha do usuário
 Digitar no campo senha a senha do usuário errada
     Input Text    xpath=//*[@id="password"]         ${SENHAE}
 
-Acessar pagina de login
-    Click Element    xpath=//*[@id="login-button"]
-
 Acionar o botão cadastro
-    Click Element    xpath=//html/body/nav/div/div[2]/div/a
-    Sleep    3
+    Click Element    xpath=/html/body/main/header/div/div/button
+    Sleep    2
+
 Acessar pagina de cadastro
     Click Element    xpath=/html/body/nav/div/div[2]/div/a
 
+Verificar resultado
+    Page Should Contain    ${NOME}
+
+Verificar resultado errado
+    Page Should Contain    Endereço de e-mail inválido
 
 
