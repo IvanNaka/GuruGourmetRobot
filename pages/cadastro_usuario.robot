@@ -7,8 +7,8 @@ ${emailUsuarioInvalido}      casosdeteste
 ${senhaInvalida}             senhafraca
 ${usuarioInvalido}           casosdeteste
 ${senhaUsuario}      Senha123!
-${nomeUsuario}    toby4
-${emailUsuario}      toby4@gmail.com
+${nomeUsuario}       testeFuncionando
+${emailUsuario}      testefuncionando@gmail.com
 
 *** Keywords ***
 Realizar cadastro email invalido
@@ -66,4 +66,8 @@ Verificar resultado
 Verificar resultado errado
     Page Should Contain    Endereço de e-mail inválido
 
+Verificar usuario errado
+    Page Should Contain    Usuario já existente!
 
+Verificar senha errado
+    Page Should Contain    A senha deve conter pelo menos 8 caracteres, uma letra maiúscula, uma letra minúscula, um número e um caractere especial

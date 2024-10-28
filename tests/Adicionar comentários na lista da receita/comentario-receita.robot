@@ -33,3 +33,4 @@ Caso de Teste 11 - Usuario não logado
 	Acessar a home page
 	Acessar Receita
 	Scroll para ver comentários
+    Verificar caixa de comentario desabilitada

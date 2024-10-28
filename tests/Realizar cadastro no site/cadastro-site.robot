@@ -35,13 +35,16 @@ Caso de Teste 14 - Email inválido
 	Acessar a home page
 	Acessar o registrar
 	Realizar cadastro email invalido
+    Verificar resultado errado
 
 Caso de Teste 15 - Usuário inválido
 	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
 	Acessar a home page
     Realizar cadastro Usuario invalido
+    Verificar usuario errado
 
 Caso de Teste 16 - Senha inválida
 	[Documentation]    Esse teste verifica a denúncia de um comentário justificada
 	Acessar a home page
     Realizar cadastro Senha invalida
+    Verificar senha errado

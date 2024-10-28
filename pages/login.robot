@@ -3,12 +3,12 @@ Library	    SeleniumLibrary
 Resource    ../pages/resource.robot
 
 *** Variables ***
-${emailUsuario}      casosdeteste@email.com	
-${senhaUsuario}      Senha123!
+${emailLogin}      casosdeteste@email.com
+${senhaLogin}      Senha123!
 
 *** Keywords ***
 Realizar login
     Click Link        id=login-button
-    Input Text        id=email        ${emailUsuario}
-    Input Text        id=password     ${senhaUsuario}
+    Input Text        id=email        ${emailLogin}
+    Input Text        id=password     ${senhaLogin}
     Click Button      id=botao-login

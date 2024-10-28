@@ -17,3 +17,4 @@ Caso de Teste 01 - Denúncia justificada
 	Acionar botão denunciar
 	Escrever Denúncia
 	Terminar Denúncia
+	Verificar Denúncia
