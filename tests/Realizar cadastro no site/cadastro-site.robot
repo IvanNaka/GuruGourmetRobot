@@ -16,6 +16,8 @@ CT12 - Realizar Cadastro no Site - Informações corretas
     Digitar no campo email o email do usuario
     Digitar no campo senha a senha do usuário
     Acionar o botão cadastro
+    Verificar resultado
+
 
 CT13 - Realizar Cadastro no Site - Informações incorretas
     [Documentation]    Esse teste verifica a realização de um cadastro com informações incorretas
@@ -26,6 +28,7 @@ CT13 - Realizar Cadastro no Site - Informações incorretas
     Digitar no campo email o email do usuario errado
     Digitar no campo senha a senha do usuário errada
     Acionar o botão cadastro
+    Verificar resultado errado
 
 Caso de Teste 14 - Email inválido
 	[Documentation]    Esse teste verifica o email invalido no cadastro do usuario
